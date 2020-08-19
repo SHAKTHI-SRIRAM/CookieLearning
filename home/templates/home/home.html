@@ -1,11 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Learning</title>
-</head>
-<body>
-    
-</body>
-</html>
+
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="main-container">
+    <div class="row">
+        <div class="col l8 m8 s8">
+            <div class="para">
+            <h3 class="white-text para-heading">Want to become a programmer?<br>You are in the right place!!..</h3>
+            <br>
+            <h5 class="white-text para-text">Welcome to Cookie Learning!! <br>
+                Here you can learn programming in a easy way.</h5>
+            </div>
+        </div> 
+        <div class="col l4 m4 s4">
+            <img class="mainbg" src="{% static 'home/bg1.jpg' %}" alt="">
+        </div>
+    </div>
+    <div class="container-footer">
+        <img class="footer-pic" src="{% static 'home/pic1.png' %}" alt="">
+    </div>
+</div>
+
+{% endblock content %}

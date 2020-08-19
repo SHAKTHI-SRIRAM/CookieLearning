@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.brand-logo{
+    margin-left: 10px;
+    font-family: 'Bree Serif';
+}
+.transparent {
+    box-shadow: none;
+}
+.nav-content {
+    padding-top: 15px;
+}
+
+/* Home Template */
+.main-container { 
+    background-color: rgb(167, 49, 122);
+}
+.para-heading {
+    margin: 100px 0px 10px 20px;
+    font-family: 'Cherry Swash';
+}
+.para-text {
+    font-family: 'Concert One';
+    margin: 10px 0px 10px 40px;
+}
+.mainbg {
+    margin: 50px 40px 00px 0px;
+    height: 300px;
+    width: 300px;
+}
+.firstdiv {
+    left: -100px;
+    width: 50%;
+    height: 40px;
+    background-color: purple;
+    transform: skewX(50deg);
+    left: 20px;
+}
+.seconddiv {
+    width: 90%;
+    height: 60px;
+    background-color: green;
+    transform: skewX(-50deg);
+}
+.thirddiv {
+    width: 75%;
+    height: 40px;
+    background-color: yellow;
+    transform: skewX(-50deg);
+}
+.footer-pic{ 
+    width: 100%;
+}
