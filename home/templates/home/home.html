@@ -1,4 +1,3 @@
-
 {% extends "home/base.html" %}
 {% load static %}
 
@@ -77,7 +76,8 @@
                 <h6 class="grey-text text-darken-2" style="text-align: justify; font-family: 'Alegreya Sans'; font-size: 22px;">
                     Python is the most efficient programming language. It is beginner friendly and can be learnt with ease. It has got amazing web development frameworks like Django and Flask, also it is widely used in machine learning and artificial intelligence. If you want to become a good programmer surely you need python.
                 </h6>
-                <a class="waves-effect waves-light btn-large pink darken-1" style="margin: 20px;"><i
+                <a href="{% url 'python-home' %}" class="waves-effect waves-light btn-large pink darken-1"
+                    style="margin: 20px;"><i
                         class="material-icons left">send</i>Check the Courses</a>
             </div>
             <div class="col l4 m4 s12" style="padding-left: 100px;">
@@ -91,7 +91,8 @@
                 <h6 class="grey-text text-darken-2" style="text-align: justify; font-family: 'Alegreya Sans'; font-size: 22px;">
                     Javascript is a powerful programming language predominantly used for web development. It is highly required if you want to become a web developer. It has popular frameworks such as node.js for programming and React.js which is a highly used web development framework.
                 </h6>
-                <a class="waves-effect waves-light btn-large pink darken-1" style="margin: 20px;"><i
+                <a href="{% url 'javascript-home' %}" class="waves-effect waves-light btn-large pink darken-1"
+                    style="margin: 20px;"><i
                         class="material-icons left">send</i>Check the Courses</a>
             </div>
             <div class="col l4 m4 s12" style="padding-left: 100px;">
@@ -105,7 +106,8 @@
                 <h6 class="grey-text text-darken-2" style="text-align: justify; font-family: 'Alegreya Sans'; font-size: 22px;">
                     HTML & CSS are the most important languages required for web development. HTML is the base core language of every webpage and is essential to be learnt. Eventough many Bootstrap softwares have been developed we still require CSS knowledge for styling our webpages.
                 </h6>
-                <a class="waves-effect waves-light btn-large pink darken-1" style="margin: 20px;"><i
+                <a href="{% url 'htmlcss-home' %}" class="waves-effect waves-light btn-large pink darken-1"
+                    style="margin: 20px;"><i
                         class="material-icons left">send</i>Check the Courses</a>
             </div>
             <div class="col l4 m4 s12" style="padding-left: 100px;">
@@ -119,7 +121,8 @@
                 <h6 class="grey-text text-darken-2" style="text-align: justify; font-family: 'Alegreya Sans'; font-size: 22px;">
                     Programming languages are important. But without a database every language is useless. Learning a database language can be greatly helpful in your career. Database developers of MySQL, Postgresql and Oracle earn 6 digit sum of dollars each year.   
                 </h6>
-                <a class="waves-effect waves-light btn-large pink darken-1" style="margin: 20px;"><i
+                <a href="{% url 'databases-home' %}" class="waves-effect waves-light btn-large pink darken-1"
+                    style="margin: 20px;"><i
                         class="material-icons left">send</i>Check the Courses</a>
             </div>
             <div class="col l4 m4 s12" style="padding-left: 100px;">
@@ -133,7 +136,8 @@
                 <h6 class="grey-text text-darken-2" style="text-align: justify; font-family: 'Alegreya Sans'; font-size: 22px;">
                     Git (Version Control System) is a commonly used term in programming world. It helps every programmer to connect properly with co-workers and finish a project in a matter of time. It highly increases speed of programming. Various distributed version control systtems such as Github and Docker are highly used.
                 </h6>
-                <a class="waves-effect waves-light btn-large pink darken-1" style="margin: 20px;"><i class="material-icons left">send</i>Check the Courses</a>
+                <a href="{% url 'git-home' %}" class="waves-effect waves-light btn-large pink darken-1"
+                    style="margin: 20px;"><i class="material-icons left">send</i>Check the Courses</a>
             </div>
             <div class="col l4 m4 s12" style="padding-left: 100px;">
                 <img src="{% static 'home/git.png' %}" style="height: 220px; width: 230px;" alt="">

@@ -1,0 +1,14 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1>It works</h1>
+<a href="{% url 'javascript-beginner' %}" class="waves-effect waves-light btn">               
+    <i class="material-icons right">cloud</i>View Course</a>
+<a href="{% url 'javascript-node' %}" class="waves-effect waves-light btn">
+    <i class="material-icons right">cloud</i>View Course</a>
+<a href="{% url 'javascript-react' %}" class="waves-effect waves-light btn">
+    <i class="material-icons right">cloud</i>View Course</a>
+
+{% endblock content %}
