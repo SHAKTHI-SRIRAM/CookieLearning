@@ -2,11 +2,54 @@
 {% load static %}
 
 {% block content %}
+<div style="background-color: rgb(255, 214, 239);">
+    <h1 class="center" style="font-family: 'Calistoga'; padding: 30px; margin: 0px;">Database Courses</h1>
+    <br>
+    <!-- MySQL -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">MySQL for Beginners</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    <b> MySQL</b> is a commonly used high level database and it is very easy to learn. In this course
+                    you will learn about basic syntax of MySQL queries and how to handle databases for production and
+                    management.
+                </h5>
+            </div>
+        </div>
 
-<h1>It works</h1>
-<a href="{% url 'databases-mysql' %}" class="waves-effect waves-light btn">
-    <i class="material-icons right">cloud</i>View Course</a>
-<a href="{% url 'databases-postgresql' %}" class="waves-effect waves-light btn">
-    <i class="material-icons right">cloud</i>View Course</a>
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/mysql.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'databases-mysql' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View Course</a>
+            </div>
+        </div>
+    </div>
 
-{% endblock content %}
+    <!-- Postgresql -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">Postgresql for Beginners</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    <b>Postgresql</b> is a highly used database. It is famous for its good GUI (pgadmin) and has an efficient system. It is used in various sites such as Heroku and is a preferred database for production and management. Int his course you will learn to make basic queries and handle postgresql databa.se
+            </div>
+        </div>
+
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/postgresql.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'databases-postgresql' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View
+                    Course</a>
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock content %}

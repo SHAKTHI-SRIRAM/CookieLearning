@@ -2,13 +2,80 @@
 {% load static %}
 
 {% block content %}
+<div style="background-color: rgb(255, 214, 239);">
+    <h1 class="center" style="font-family: 'Calistoga'; padding: 30px; margin: 0px;">Javascript Courses</h1>
+    <br>
+    <!-- Javascript for Beginners -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">Javascript for Beginners</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    Javascript is a very important language for any web developers.
+                    This course is for beginners who dont even have any idea about javascript or programming. It helps you
+                    to learn basics of javascript in 20 days and master datatypes, operators, loops, functions and classes
+                    and become an amateurin javascript programming
+                </h5>
+            </div>
+        </div>
 
-<h1>It works</h1>
-<a href="{% url 'javascript-beginner' %}" class="waves-effect waves-light btn">               
-    <i class="material-icons right">cloud</i>View Course</a>
-<a href="{% url 'javascript-node' %}" class="waves-effect waves-light btn">
-    <i class="material-icons right">cloud</i>View Course</a>
-<a href="{% url 'javascript-react' %}" class="waves-effect waves-light btn">
-    <i class="material-icons right">cloud</i>View Course</a>
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/javascript.jpeg' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'javascript-beginner' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View Course</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PNode.js -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">Node.js</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    Node.js is a very famous open source javascript executer containing chrome v8 engine. It provides a good environment for javascript and is highly recommended for getting trained up in javascript. In this course you will learn how to work in node.js and master it.
+                </h5>
+            </div>
+        </div>
+
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/nodejs.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'javascript-node' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View
+                    Course</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- React.js -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">React</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    React is an open-source JavaScript library for building user interfaces or UI components. It is a
+                    very commonly used framework and has high efficient working pattern. React can be used as a base in
+                    the development of single-page or mobile applications. In this course you will learn how to build real time applications with React.
+                </h5>
+            </div>
+        </div>
+
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/React.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'javascript-react' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View
+                    Course</a>
+            </div>
+        </div>
+    </div>
 
 {% endblock content %}

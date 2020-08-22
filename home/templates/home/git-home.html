@@ -2,11 +2,53 @@
 {% load static %}
 
 {% block content %}
+<div style="background-color: rgb(255, 214, 239);">
+    <h1 class="center" style="font-family: 'Calistoga'; padding: 30px; margin: 0px;">Database Courses</h1>
+    <br>
+    <!-- git -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">git for Beginners</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    <b>Git</b> is a distributed version-control system for tracking changes in source code during
+                    software development. It is designed for coordinating work among programmers, but it can be used to
+                    track changes in any set of files. You will hear the word git and github a lot in programming because it is essential for working in groups. In this course you will learn about working with git and its different functions like push, pull, add, commit and amny more.
+                </h5>
+            </div>
+        </div>
 
-<h1>It works</h1>
-<a href="{% url 'git-git' %}" class="waves-effect waves-light btn">
-    <i class="material-icons right">cloud</i>View Course</a>
-<a href="{% url 'git-github' %}" class="waves-effect waves-light btn">
-    <i class="material-icons right">cloud</i>View Course</a>
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/git.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'git-git' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View Course</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Postgresql -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">Github</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    <b>Github</b> is a version control system used for hosting software applications and enabling version control using git. It is the famous among any other distributed version control systems. In this course you will learn about using Github and handling it for high level ptojects.
+            </div>
+        </div>
+
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/github.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'git-github' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View
+                    Course</a>
+            </div>
+        </div>
+    </div>
 
 {% endblock content %}

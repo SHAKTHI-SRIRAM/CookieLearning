@@ -2,13 +2,80 @@
 {% load static %}
 
 {% block content %}
+<div style="background-color: rgb(255, 214, 239);">
+    <h1 class="center" style="font-family: 'Calistoga'; padding: 30px; margin: 0px;">Javascript Courses</h1>
+    <br>
+    <!-- HTML for Beginners -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">HTML for Beginners</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    HTML (Hyper Text Markup Language) is the base framework of every web application and is an essential
+                    programming language to be learnt. In this course you will learn about the basic syntax of HTML and
+                    how it is helpful in web development.
+                </h5>
+            </div>
+        </div>
 
-<h1>It works</h1>
-<a href="{% url 'htmlcss-html' %}" class="waves-effect waves-light btn">
-    <i class="material-icons right">cloud</i>View Course</a>
-<a href="{% url 'htmlcss-css' %}" class="waves-effect waves-light btn">
-    <i class="material-icons right">cloud</i>View Course</a>
-<a href="{% url 'htmlcss-materialize' %}" class="waves-effect waves-light btn">
-    <i class="material-icons right">cloud</i>View Course</a>
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/html.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'htmlcss-html' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View Course</a>
+            </div>
+        </div>
+    </div>
 
-{% endblock content %}
+    <!-- CSS -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">Complete CSS course</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    <b>CSS (Cascading Style Sheet)</b> is the side language of HTML used to decorate HTML web pages.
+                    It is highly required beacuse webpages without CSS sucks!!.. Every web developer need to learn
+                    CSS. Eventough different bootstrap softwares are developed(learn to use bootstrap in the next
+                    course) the knowledge of CSS is essential.
+                </h5>
+            </div>
+        </div>
+
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/css.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'htmlcss-css' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View
+                    Course</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap - Materialize -->
+    <div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+        <div class="col s8 l8 m8">
+            <div class="card-content">
+                <h3 style="font-family: 'Capriola'">Materialize framework</h3>
+                <br>
+                <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                    Materialize is an awesome framework of bootstrap classes and with magnificient library of various CSS components. Learning a bootstrap framework is very important for web developers. Materialize offers you excellent designs and choices to decorate your webpage. This course requires basic knowledge of HTML, CSS and Javascript so look into the other courses too for mastering web development.
+                </h5>
+            </div>
+        </div>
+
+        <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/materialize.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'htmlcss-materialize' %}" class="waves-effect waves-light btn right"
+                    style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View
+                    Course</a>
+            </div>
+        </div>
+    </div>
+
+    {% endblock content %}

@@ -3,11 +3,94 @@
 {% load static %}
 
 {% block content %}
+<div style="background-color: rgb(255, 214, 239);">
+<h1 class="center" style="font-family: 'Calistoga'; padding: 30px; margin: 0px;">Python Courses</h1>
+<br>
+<!-- Python for Beginners -->
+<div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+    <div class="col s8 l8 m8">
+        <div class="card-content">
+            <h3 style="font-family: 'Capriola'">Python for Beginners</h3>
+            <br>
+            <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                This course is for beginners who dont even have any idea about python or programming. It helps you to learn basics of python in 20 days and master datatypes, operators, loops, functions and classes and become an amateurin python programming
+            </h5>
+        </div>
+    </div>
 
-<h1>It works</h1>
-<a href="{% url 'python-beginner' %}" class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>View Course</a>
-<a href="{% url 'python-gui' %}" class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>View Course</a>
-<a href="{% url 'python-datascience' %}" class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>View Course</a>
-<a href="{% url 'python-django' %}" class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>View Course</a>
+    <div class="col s4 l4 m4">
+            <div class="card-image waves-effect waves-block waves-light right">
+                <img class="right" src="{% static 'home/python.png' %}" style="height: 250px; width: 250px;">
+                <a href="{% url 'python-beginner' %}" class="waves-effect waves-light btn right" style="margin: 20px; width: 250px; margin-right: 0px;"><i
+                        class="material-icons right">flash_on</i>View Course</a>
+            </div> 
+    </div>
+</div>
+
+<!-- Python GUI development -->
+<div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+    <div class="col s8 l8 m8">
+        <div class="card-content">
+            <h3 style="font-family: 'Capriola'">Python GUI Development (Tkinter)</h3>
+            <br>
+            <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                In this course you will learn to design a Graphical User Interface through Tkinter framework of python. In the end you will be able to develop a complete GUI for a calculator app and Chess Game. It requires basic skilld in python programming so look into our "Python for Beginners course before learning GUI development"
+            </h5>
+        </div>
+    </div>
+
+    <div class="col s4 l4 m4">
+        <div class="card-image waves-effect waves-block waves-light right">
+            <img class="right" src="{% static 'home/tkinter.jpg' %}" style="height: 250px; width: 250px;">
+            <a href="{% url 'python-gui' %}" class="waves-effect waves-light btn right"
+                style="margin: 20px; width: 250px; margin-right: 0px;"><i class="material-icons right">flash_on</i>View
+                Course</a>
+        </div>
+    </div>
+</div>
+
+<!-- Datascience with python -->
+<div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+    <div class="col s8 l8 m8">
+        <div class="card-content">
+            <h3 style="font-family: 'Capriola'">Datascience with python</h3>
+            <br>
+            <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                In this course you will get to know about the basics of Datascience with python. You will learn to work with Pandas library which is one of the famously used library for Datascience and Machine Learning.This course requires basic knowledge in python.
+            </h5>
+        </div>
+    </div>
+
+    <div class="col s4 l4 m4">
+        <div class="card-image waves-effect waves-block waves-light right">
+            <img class="right" src="{% static 'home/pandas.png' %}" style="height: 250px; width: 250px;">
+            <a href="{% url 'python-datascience' %}" class="waves-effect waves-light btn right"
+                style="margin: 20px; width: 250px; margin-right: 0px;"><i class="material-icons right">flash_on</i>View
+                Course</a>
+        </div>
+    </div>
+</div>
+
+<!-- Django Framework -->
+<div class="row" style="margin: 40px; border: 3px solid grey; border-radius: 5%; padding: 20px;">
+    <div class="col s8 l8 m8">
+        <div class="card-content">
+            <h3 style="font-family: 'Capriola'">Django Framework</h3>
+            <br>
+            <h5 class="grey-text text-darken-2" style="font-size: 25px;">
+                Django is one of the famous web developmet frameworks present. It provides you with super cool stuff which makes web development a lot more easier. In this course you will learn about important web development concepts like ORM, Http request methods, and in the end you can host a full fledged web application online.
+            </h5>
+        </div>
+    </div>
+
+    <div class="col s4 l4 m4">
+        <div class="card-image waves-effect waves-block waves-light right">
+            <img class="right" src="{% static 'home/django.png' %}" style="height: 250px; width: 250px;">
+            <a href="{% url 'python-django' %}" class="waves-effect waves-light btn right"
+                style="margin: 20px; width: 250px; margin-right: 0px;"><i class="material-icons right">flash_on</i>View
+                Course</a>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}
