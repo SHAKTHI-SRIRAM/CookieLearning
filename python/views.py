@@ -19,3 +19,5 @@ def python_datascience(request):
 
 def python_django(request):
     return render(request, 'home/python-django.html')
+
+

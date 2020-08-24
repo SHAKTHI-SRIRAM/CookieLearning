@@ -26,6 +26,8 @@
     <link href='https://fonts.googleapis.com/css?family=Averia Gruesa Libre' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chonburi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Copse' rel='stylesheet'>
 </head>
 <body class="purple lighten-1">
 
@@ -66,6 +68,25 @@
 
     {% endblock %}
 
+    <!-- Feature Discovery -->
+    <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('open')">Open tap
+        target</a>
+
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a id="menu" class="btn btn-floating btn-large cyan" onclick="$('.tap-target').tapTarget('open')">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+    <div class="tap-target cyan" data-target="menu">
+        <div class="tap-target-content white-text">
+            <h5>I am here</h5>
+            <p class="white-text">Provide value and encourage return visits by introducing users to new features and
+                functionality at contextually
+                relevant moments.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="page-footer" style="margin-top: 0px;">
         <div class="container">
             <div class="row">
